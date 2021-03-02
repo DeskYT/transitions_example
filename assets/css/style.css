@@ -18,6 +18,31 @@ p{
 ul{
   list-style: none;
 }
-li::before{
+/* li::before{
   content: url('../images/icons/access-point.svg');
+} */
+
+li{
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: teal;
+  width: 80%;
+  position: relative;
+  text-align: center;
+}
+li::before, li::after{
+  color: black;
+  font-size: 2em;
+  position: absolute;
+}
+li::before{
+  content:  open-quote;
+  right: calc(100% + 5px);
+  top: -0.5em;
+}
+li::after{
+  content: close-quote;
+  left: calc(100% + 5px);
+  bottom: -0.9em;
 }
