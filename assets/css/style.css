@@ -1,13 +1,14 @@
-
+ 
 p::before{
-  content: '';
-
-  display: block;
-
+  content: '>>>>>';
   color: red;
   background-color: green;
-  width: 50px;
-  height: 50px;
+}
+
+p::after{
+  content: '<<<<<';
+  color: red;
+  background-color: green;
 }
 
 p{
