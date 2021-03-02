@@ -14,3 +14,10 @@ p::after{
 p{
   border: 1px solid black;
 }
+
+ul{
+  list-style: none;
+}
+li::before{
+  content: url('../images/icons/access-point.svg');
+}
